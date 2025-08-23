@@ -10,7 +10,7 @@ RAG-Powered Knowledge Base: Retrieves precise information from murugan_knowledge
 Real-Time Web Search: Integrates DuckDuckGo for up-to-date information beyond the knowledge base.
 Interactive UI: Built with Streamlit for a user-friendly chat experience, supporting Tamil text (UTF-8 encoded).
 Cultural Focus: Covers Murugan’s significance in Tamil culture, including festivals and diaspora traditions.
-Robust AI: Powered by Grok’s llama3-70b-8192 model via the Groq API for fast, reliable responses.
+Robust AI: Powered by Grok’s  model via the Groq API for fast, reliable responses.
 
 🛠️ Tech Stack
 

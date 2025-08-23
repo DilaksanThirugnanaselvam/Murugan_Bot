@@ -1,0 +1,25 @@
+[project]
+name = "murugan-bot"
+version = "0.1.0"
+description = "A Murugan-based chatbot with RAG, agent system, and Streamlit UI"
+authors = [
+    { name = "Dilaksan Thirugnanaselvam", email = "thirudilak131@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "langchain>=0.3.0",
+    "langchain-groq>=0.2.0",
+    "langchain-community>=0.3.0",
+    "streamlit>=1.38.0",
+    "faiss-cpu>=1.8.0",
+    "sentence-transformers>=3.1.0",
+    "python-dotenv>=1.0.0",
+    "duckduckgo-search>=7.0.0",
+    "langchain-huggingface>=0.1.0"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

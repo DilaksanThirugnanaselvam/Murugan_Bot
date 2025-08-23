@@ -1,8 +1,9 @@
-Murugan Bot 🤖🙏
+முருகன் Bot 🤖🙏
+
 A culturally inspired AI chatbot dedicated to Lord Murugan (முருகன்), the Tamil deity of war and youth, built with Retrieval-Augmented Generation (RAG), LangChain, and Streamlit.
 An AI-powered journey into the world of Lord Murugan and Tamil diaspora worship.
 🌟 About the Project
-Murugan Bot is an interactive chatbot that answers queries about Lord Murugan, his mythology, temples (ஆறுபடை வீடு), festivals like Thaipusam (தைப்பூசம்), and worship practices among the Tamil diaspora, including Thamizh Muppattan (தமிழ் முப்பத்தான்) in Mauritius and Eezham Thamizh Muruga Valipadu (ஈழத் தமிழ் முருக வழிபாடு) in Sri Lanka. By combining Retrieval-Augmented Generation (RAG) with real-time web search, the bot delivers accurate, culturally rich responses in English and Tamil.
+Murugan Bot is an interactive chatbot that answers queries about Lord Murugan, his mythology, temples (ஆறுபடை வீடு), festivals like Thaipusam (தைப்பூசம்), and worship practices among the Tamil diaspora, including Thamizh Muppattan (தமிழ் முப்பாட்டன்) in Mauritius and Eezham Thamizh Muruga Valipadu (ஈழத் தமிழ் முருக வழிபாடு) in Sri Lanka. By combining Retrieval-Augmented Generation (RAG) with real-time web search, the bot delivers accurate, culturally rich responses in English and Tamil.
 Key Features
 
 RAG-Powered Knowledge Base: Retrieves precise information from murugan_knowledge.txt using LangChain and FAISS with sentence-transformers/all-MiniLM-L6-v2 embeddings.
@@ -33,7 +34,7 @@ Groq API Key: Obtain from x.ai.
 Installation
 
 Clone the Repository:
-git clone <your-repo-url>
+git clone 
 cd murugan_bot
 
 
@@ -104,72 +105,10 @@ Query Examples:
 
 Output Example:Among Thamizh Muppattan (தமிழ் முப்பத்தான்), the Tamil diaspora in Mauritius, Murugan worship is vibrant. Temples like the Sockalingum Meenatchee Ammen Kovil in Port Louis host grand Thaipusam (தைப்பூசம்) celebrations with Kavadi processions (காவடி ஆட்டம்) and cultural events, reflecting the community’s deep devotion to முருகன்.
 
-
-
-🐞 Troubleshooting
-
-List Index Out of Range:
-Ensure data/murugan_knowledge.txt exists and has content.
-Check rag.py for file existence and empty document checks.
-
-
-Deprecation Warnings:
-Verify rag.py uses from langchain_huggingface import HuggingFaceEmbeddings and from langchain_community.vectorstores import FAISS.
-Update dependencies:uv pip install --force-reinstall langchain>=0.3.0 langchain-huggingface>=0.1.0
-
-
-
-
-Tamil Text Issues:
-Install Noto Sans Tamil.
-Ensure murugan_knowledge.txt is UTF-8 encoded (use VS Code; set encoding in bottom-right).
-
-
-Port Conflicts:
-If http://localhost:8501 is in use:netstat -a -n -o | find "8501"
-taskkill /PID <pid> /F
-
-
-
-
-Dependency Issues:
-If faiss-cpu fails with Python 3.13.2, try Python 3.10:deactivate
-Remove-Item -Recurse -Force .venv
-C:\Python310\python.exe -m venv .venv
-.venv\Scripts\activate
-uv sync
-
-
-
-
-
-📂 Project Structure
-murugan_bot/
-├── .gitignore           # Ignores .env, .venv, etc.
-├── .env                # Contains GROQ_API_KEY
-├── pyproject.toml      # Dependencies managed by uv
-├── README.md           # This file
-├── data/
-│   └── murugan_knowledge.txt  # Knowledge base for RAG
-├── app.py              # Streamlit UI
-├── rag.py              # RAG pipeline
-├── agent.py            # Agent logic
-
-🤝 Contributing
-Contributions are welcome! To contribute:
-
-Fork the repository.
-Create a feature branch (git checkout -b feature/YourFeature).
-Commit changes (git commit -m "Add YourFeature").
-Push to the branch (git push origin feature/YourFeature).
-Open a Pull Request.
-
-Please ensure murugan_knowledge.txt includes accurate, culturally sensitive content.
 📧 Contact
 
 Author: Dilaksan Thirugnanaselvam
 Email: thirudilak131@gmail.com
-GitHub: Your GitHub Profile (replace with your profile link)
 
 🙏 Acknowledgments
 

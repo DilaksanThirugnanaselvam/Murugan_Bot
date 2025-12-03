@@ -12,6 +12,8 @@ Interactive UI: Built with Streamlit for a user-friendly chat experience, suppor
 Cultural Focus: Covers Murugan’s significance in Tamil culture, including festivals and diaspora traditions.
 Robust AI: Powered by Grok’s  model via the Groq API for fast, reliable responses.
 
+![image alt](https://github.com/DilaksanThirugnanaselvam/Murugan_Bot/blob/dcd7efb439c44d4978006e4a19c90ef75dfc195a/murugan.jpeg)
+
 🛠️ Tech Stack
 
 Python: 3.10+ (tested with 3.13.2)
